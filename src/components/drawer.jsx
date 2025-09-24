@@ -4,7 +4,7 @@ const Drawer = ({ setDrawer, cart, delOrder, confirmOrder, orderState }) => {
   const price = cart.reduce((prev, current) => (prev += current.price), 0);
   console.log(orderState);
   return (
-    <div className="h-[100%] fixed flex flex-col right-0 bg-gray-200 w-[80%] md:w-1/3 p-3">
+    <div className="h-[100%] fixed flex flex-col right-0 bg-gray-200 w-[80%] md:w-1/3 p-3 overflow-auto">
       <button
         className="bg-yellow-300 text-white p-2 w-10 h-10 "
         onClick={() => setDrawer(false)}
